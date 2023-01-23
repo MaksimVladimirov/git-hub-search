@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { RepoCard } from "../components/RepoCard";
 import { useDebounce } from "../hooks/debounce";
 import { useLazyGetUserReposQuery, useSearchUsersQuery } from "../store/github/github.api";
 
@@ -18,7 +19,8 @@ export const HomePage = () => {
   }, [debounced, data]);
 
   const clickHandler = (username: string) => {
-    console.log(username);
+    fetchRepos(username);
+    setDropdown(false)
   };
 
   return (
@@ -50,7 +52,7 @@ export const HomePage = () => {
         <div className="conatiner">
           {areReposLoading && <p className="text-center">Repositories are loading...</p>}
           {repos?.map((repo) => (
-            <p>{repo.url}</p>
+            <RepoCard repo={repo} key={repo.id} />
           ))}
         </div>
       </div>
