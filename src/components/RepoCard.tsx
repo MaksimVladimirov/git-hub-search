@@ -7,6 +7,7 @@ export const RepoCard = ({ repo }: { repo: IRepo }) => {
   const { addFavourite, removeFavourite } = useActions();
   const { favourites } = useAppSelector((state) => state.github);
 
+
   const [isFav, setIsFav] = useState(favourites.includes(repo.html_url));
 
   const addToFavourite = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -43,6 +44,7 @@ export const RepoCard = ({ repo }: { repo: IRepo }) => {
             className="py-2 px-4  bg-red-400 rounded hover:shadow-md transitions-all"
             onClick={removeFromFavourite}
           >
+            
             Remove
           </button>
         )}
