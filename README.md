@@ -7,7 +7,7 @@
 
 ## ✍️ Описание ✍️
 
-<strong>Git hub users search- сервис для поиска пользователей и их проектов в gitub </strong>
+<strong>Git hub users search- сервис для поиска пользователей и их проектов в github </strong>
 <p>Проект базируется на React, RTK Query, Redux, TypeScript, Tailwind</p>
 
 ## ⚒️ Используемые технологии: ⚒️
