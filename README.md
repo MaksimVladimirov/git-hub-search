@@ -1,7 +1,7 @@
 # `Git hub users search`
 
 
-# git-hub-search-psi.vercel.app
+# https://git-hub-search-psi.vercel.app/
 
 
 
